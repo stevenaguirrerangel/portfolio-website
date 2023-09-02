@@ -2,30 +2,56 @@ img[value="propic"] {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    margin: 15px;
 }
 
-.intro {
+#introwrapper {
     text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.resume {
-    border-left: 200px solid;
+#introimage {
+    float: left;
+    width: 35%;
+}
+
+#introtext {
+    float: right;
+    width: 60%;
+}
+
+#resume {
+    width: 325px;
+    margin: 0 auto;
+}
+
+#footer {
+    display: flex;
+    margin-top: 15%;
+    justify-content: center;
 }
 
 body {
     background-color: black;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    text-align: left;
+}
+h2 {
+    text-align: left;
+}
+a {
+    text-decoration: none;
+}
+
+* {
     color: white;
 }
 
-hr {
-    color: white;
-}
-
-ul, ol {
-    color: white;
-    text-align: center;
-    list-style: inside;
+p {
+    margin: 7px 0px;
 }
