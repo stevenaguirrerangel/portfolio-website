@@ -1,17 +1,3 @@
-* {
-    margin-left: 150px;
-    margin-top: 150px;
-    text-align: center;
-}
-
-div {
-    display: block;
-}
-
-.resume {
-    max-width: 1500px;
-}
-
 img[value="propic"] {
     height: 150px;
     width: 150px;
