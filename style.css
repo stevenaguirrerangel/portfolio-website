@@ -4,6 +4,14 @@ img[value="propic"] {
     border-radius: 50%;
 }
 
+.intro {
+    text-align: center;
+}
+
+.resume {
+    border-left: 200px solid;
+}
+
 body {
     background-color: black;
 }
@@ -19,4 +27,5 @@ hr {
 ul, ol {
     color: white;
     text-align: center;
+    list-style: inside;
 }
