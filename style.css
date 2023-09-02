@@ -2,8 +2,12 @@
     margin-left: -40px;
     margin-top: -20px;
     text-align: center;
+}
+
+.resume {
     max-width: 500px;
 }
+
 
 img[value="propic"] {
     height: 150px;
