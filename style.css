@@ -1,3 +1,13 @@
+* {
+    text-align: center;
+}
+
+img[value="propic"] {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
 body {
     background-color: black;
 }
@@ -12,14 +22,4 @@ hr {
 
 ul, ol {
     color: white;
-}
-
-* {
-    text-align: center;
-}
-
-img[value="propic"] {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
 }
