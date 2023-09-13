@@ -2,37 +2,170 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
-    <title>My Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Prata&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
+
 <body>
-    <div id="introwrapper">
-        <div id="introimage">
-            <img src="https://media.licdn.com/dms/image/C5603AQEbKCkeB8xerw/profile-displayphoto-shrink_200_200/0/1517052850927?e=1698883200&v=beta&t=zbPkvFx3YwVvUSgFKyi7TmZBvfPA5llwYLHcVqDxGG0" alt="Profile Picture" value="propic" />
+    <section id="header">
+        <div class="container col-xxl-8 px-5 pt-1">
+            <header class="d-flex flex-wrap py-3 mb-4">
+                <a href="./" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <span class="fs-4"><img src="./images/logo.svg" height="35px"></span>
+                </a>
+
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </a>
+                    
+                    <ul class="dropdown-menu text-small" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 34px);">
+                        <li><a class="dropdown-item" href="#resume" >Resume</a></li>
+                        <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                        <li><a class="dropdown-item" href="#">Photography</a></li>
+                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </header>
         </div>
-        <div id="introtext">
-            <h1><a href="./aboutme.html">Steven Aguirre</a></h1>
-            <h2>Manufacturing engineer learning to code in my <a href="./hobbies.html">spare</a> time.</h2>
+    </section>
+    
+    <section id="heroes">
+        <div class="container col-xxl-8 px-5 pb-5">
+            <div class="row flex-lg-row justify-content-center align-items-center g-5 py-5">
+                <div class="col-lg-4 text-center">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Steven Aguirre</h1>
+                    <p class="lead">Manufacturing engineer learning python and web development.</p>
+                </div>
+                
+                <div class="col-lg-2 text-center px-0">
+                    <img src="https://media.licdn.com/dms/image/C5603AQEbKCkeB8xerw/profile-displayphoto-shrink_200_200/0/1517052850927?e=1700092800&amp;v=beta&amp;t=1eoKYD2_8ubf6jh1z2WqjVCrrr-XIPVnwZBDRfOka1Q" class="center-block mx-0 img-fluid profile-img" alt="profile image" width="200px" loading="lazy">
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <p class="lead">Born in 1994 in Torreon, Mexico.</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div id="resume">
-        <h3>Education:</h3>
-                <p>University of Texas Rio Grande Valley,<br >M.Sc. Manufacturing Engineering</p>
-                <p>Texas Tech University,<br />B.Sc. Petroleum Engineering</p>
-        <h3>Work Experience:</h3>
-                <p>2022 to 2023 - Manufacturing Engineer</p>
-                <p>2021 to 2023 - Operations Manager I</p>
-        <h3>Skills:</h3>
-                <p>Project Management</p>
-                <p>Process Improvement</p>
-                <p>Python</p>
-                <p>Photography</p>
-    </div>
-    <footer id="footer">
-        © 2023 Steven Aguirre
-    </footer>
+    </section>
+
+    <section id="resume">
+        <div class="container col-xl-5 col-md-8 px-5 py-5 border border-dark">
+            <h4>Resume</h4>
+            <div class="row justify-content-center mb-5">
+                <div class="col-3 text-center">
+                    <p>2022 - Present</p>
+                </div>
+                <div class="col-9">
+                    <p class="mb-1 fw-bold">Manufacturing Engineer - Steris</p>
+                    <p class="mb-1">Supporting two manufacturing lines.</p>
+                    <p class="mb-0">Process improvement, validation, maintenance.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-3 text-center">
+                    <p>2021 - 2022</p>
+                </div>
+                <div class="col-9">
+                    <p class="mb-1 fw-bold">Operations Manager - Amazon</p>
+                    <p class="mb-1">Managing Outbound production planning, implementation, and execution.</p>
+                    <p class="mb-0">People management, process improvement, data analysis.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-3 text-center">
+                    <p>2018 - 2019</p>
+                </div>
+                <div class="col-9">
+                    <p class="mb-1 fw-bold">Lean Manufacturing Intern</p>
+                    <p class="mb-1">Managing Outbound production planning, implementation, and execution.</p>
+                    <p class="mb-0">Process improvement, kanban systems, time studies.</p>
+                </div>
+            </div>
+            <h4>Education</h4>
+            <div class="row justify-content-center mb-3">
+                <div class="col-3 text-center">
+                    <p>2018 - 2020</p>
+                </div>
+                <div class="col-9">
+                    <p class="mb-1 fw-bold">Master of Science in Manufacturing Engineering</p>
+                    <p class="mb-0">University of Texas Rio Grande Valley</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <div class="col-3 text-center">
+                    <p>2012 - 2017</p>
+                </div>
+                <div class="col-9">
+                    <p class="mb-1 fw-bold">Bachelor of Science in Petroleum Engineering</p>
+                    <p class="mb-0">Texas Tech University</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="projects">
+        
+        <div class="container py-5">
+            <h4 class="mb-5">Projects</h4>
+            <div class="row gy-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item h-100">
+                        <a href="#resume"><img src="./images/morse_code_translator.png" class="img-fluid" alt="Morse Code Translator" max-height="282" width="502"></a>
+                        <div class="centered">Morse Code Translator</div>
+                    </div>
+                </div><!-- End Gallery Item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item h-100">
+                        <a href="#"><img src="./images/Coming_soon.png" class="img-fluid" alt=""></a>
+                        <div class="centered">Tic Tac Toe</div>
+                    </div>
+                </div><!-- End Gallery Item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item h-100">
+                        <div class="gallery-item h-100">
+                            <a href="#"><img src="./images/Coming_soon.png" class="img-fluid" alt=""></a>
+                            <div class="centered">Image Watermarking Desktop App</div>
+                        </div>
+                    </div>
+                </div><!-- End Gallery Item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item h-100">
+                        <div class="gallery-item h-100">
+                            <a href="#"><img src="./images/Coming_soon.png" class="img-fluid" alt=""></a>
+                            <div class="centered">Typing Speed Test</div>
+                        </div>
+                    </div>
+                </div><!-- End Gallery Item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item h-100">
+                        <div class="gallery-item h-100">
+                            <a href="#"><img src="./images/Coming_soon.png" class="img-fluid" alt=""></a>
+                            <div class="centered">Breakout Game</div>
+                        </div>
+                    </div>
+                </div><!-- End Gallery Item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item h-100">
+                        <div class="gallery-item h-100">
+                            <a href="#"><img src="./images/Coming_soon.png" class="img-fluid" alt=""></a>
+                            <div class="centered">Cafe and Wifi Website</div>
+                        </div>
+                    </div>
+                </div><!-- End Gallery Item -->
+            </div>
+        </div>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
+
 </html>
